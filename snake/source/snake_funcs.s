@@ -62,7 +62,7 @@ UpdateSnake:
     ldr  r10,[r1,#8]            @ int speed_x = snake->speed_x;
     ldr  r11,[r1,#12]           @ int speed_y = snake->speed_y;
 
-    cmp r0,#0                   @  if (keypad != 0) {
+    cmp r0,#0                   @  if (keypad != 0) 
     beq not_keypad
     mov r10,#0                  @ speed_x = 0
     mov r11,#0                  @ speed_y = 0

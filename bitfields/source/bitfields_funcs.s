@@ -7,8 +7,7 @@
     .global Paint
 Paint:
     stmdb   sp!,{r4,r5,r6,r7,r8,r9,r10,r11,r12,r14}
-
-
+    
     mov  r7,#0x1f
     and  r8,r3,r7            @ ball_r = color & 0x1f
     and  r9,r7,r3,lsr #5     @ ball_g = (color >> 5) & 0x1f
